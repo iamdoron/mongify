@@ -1,25 +1,35 @@
 {
-  "name": "datify",
-  "version": "0.0.2",
-  "description": "datify your objects.",
+  "name": "mongify",
+  "version": "0.0.0",
+  "description": "mongify your objects.",
   "main": "index.js",
+  "dependencies": {
+    "chai": "~1.7.2",
+    "lab": "~1.1.0",
+    "moment": "~2.2.1",
+    "mongodb": "~1.3.19",
+    "traverse": "~0.6.5"
+  },
+  "devDependencies": {},
   "scripts": {
     "test": "make test"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/iamdoron/datify.git"
+    "url": "https://github.com/iamdoron/mongify.git"
   },
   "keywords": [
-    "date",
-    "convert"
+    "mongo",
+    "mongodb",
+    "convert",
+    "ObjectID"
   ],
   "author": "surui",
   "license": "MIT",
   "readmeFilename": "README.md",
-  "gitHead": "ac86c0782d613a36482d31bcf6d531944a07d4ee",
+  "gitHead": "1cdc5ece396a564836af1b7cfd39ed5e6cbc1217",
   "bugs": {
-    "url": "https://github.com/iamdoron/datify/issues"
+    "url": "https://github.com/iamdoron/mongify/issues"
   },
   "devDependencies": {
     "lab": "~1.1.0",
