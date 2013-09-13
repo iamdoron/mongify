@@ -3,9 +3,12 @@ mongify
 
 mongify your objects.
 
-## how
+[![Build Status](https://travis-ci.org/iamdoron/mongify.png?branch=master)](https://travis-ci.org/iamdoron/mongify)
 
-`> npm install mongify`
+## how
+```sh
+> npm install mongify
+```
 
 ```javascript
 Mongify = rquire('mongify');
@@ -17,6 +20,13 @@ Mongify("not a mongodb ObjectID").should.eql("not a mongodb ObjectID");
 Mongify({a: {b: '523496be6a51026f63000001'}, c:32})
 .should.eql({a: {b: new Date('523496be6a51026f63000001')}, c:32});
 ```
+
+## why
+Suppose you are building an API, and you receive a JSON. You want to have a query by ID:
+```javascript
+collection.find(Mongify(JSON.parse(query)), function(document){ /* do something*/ });
+```
+
 
 ## test
 ```sh
