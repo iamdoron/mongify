@@ -16,7 +16,6 @@
 
 	function mongifyString(raw){
 		if (isValidID(raw)) {
-			console.log("message");
 			return new MongoDb.ObjectID(raw);
 		}
 		else {
