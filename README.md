@@ -18,7 +18,7 @@ Mongify('523396be6a51026f63000001').should.eql(new Mongodb.ObjectID('523396be6a5
 Mongify("not a mongodb ObjectID").should.eql("not a mongodb ObjectID");
 
 Mongify({a: {b: '523496be6a51026f63000001'}, c:32})
-.should.eql({a: {b: new Date('523496be6a51026f63000001')}, c:32});
+.should.eql({a: {b: new Mongodb.ObjectID('523496be6a51026f63000001')}, c:32});
 ```
 
 ## why
