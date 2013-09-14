@@ -12,7 +12,7 @@
     "chai": "~1.7.2"
   },
   "scripts": {
-    "test": "make test"
+    "test": "make test-cov"
   },
   "repository": {
     "type": "git",
