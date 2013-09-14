@@ -22,7 +22,7 @@ Mongify({a: {b: '523496be6a51026f63000001'}, c:32})
 ```
 
 ## why
-Suppose you are building an API, and you receive a JSON. You want to have a query by ID:
+Suppose you are building an API, and you receive a JSON or you want to have a query by ID:
 ```javascript
 collection.find(Mongify(JSON.parse(query)), function(document){ /* do something*/ });
 ```
